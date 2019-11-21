@@ -29,10 +29,6 @@ public class GeneticAlgorithm
     /// Default amount by which parameters may be mutated.
     /// </summary>
     public const float DefMutationAmount = 2.0f;
-    /// <summary>
-    /// Default percent of genotypes in a new population that are mutated.
-    /// </summary>
-    public const float DefMutationPerc = 1.0f;
 
     /// <summary>
     /// Method template for methods used to evaluate (or start the evluation process of) the current population.

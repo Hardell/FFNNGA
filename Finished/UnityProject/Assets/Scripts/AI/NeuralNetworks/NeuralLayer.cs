@@ -7,13 +7,6 @@ using System;
 public class NeuralLayer
 {
     /// <summary>
-    /// Delegate representing the activation function of an artificial neuron.
-    /// </summary>
-    /// <param name="xValue">The input value of the function.</param>
-    /// <returns>The calculated output value of the function.</returns>
-    public delegate double ActivationFunction(double xValue);
-
-    /// <summary>
     /// The amount of neurons in this layer.
     /// </summary>
     public uint NeuronCount

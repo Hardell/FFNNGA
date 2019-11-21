@@ -14,15 +14,6 @@ public class NeuralNetwork
     }
 
     /// <summary>
-    /// An array of unsigned integers representing the node count
-    /// of each layer of the network from input to output layer.
-    /// </summary>
-    public uint[] Topology
-    {
-        get;
-    }
-
-    /// <summary>
     /// The amount of overall weights of the connections of this network.
     /// </summary>
     public int WeightCount
@@ -36,8 +27,6 @@ public class NeuralNetwork
     /// <param name="topology">An array of unsigned integers representing the node count of each layer from input to output layer.</param>
     public NeuralNetwork(params uint[] topology)
     {
-        this.Topology = topology;
-
         //Calculate overall weight count
         WeightCount = 0;
         for (var i = 0; i < topology.Length - 1; i++)

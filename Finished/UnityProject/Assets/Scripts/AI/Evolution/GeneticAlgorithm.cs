@@ -190,8 +190,7 @@ public class GeneticAlgorithm
             } while (randomIndex2 == randomIndex1);
 
             Genotype offspring1, offspring2;
-            CompleteCrossover(intermediatePopulation[randomIndex1], intermediatePopulation[randomIndex2],
-                DefCrossSwapProb, out offspring1, out offspring2);
+            CompleteCrossover(intermediatePopulation[randomIndex1], intermediatePopulation[randomIndex2], DefCrossSwapProb, out offspring1, out offspring2);
 
             newPopulation.Add(offspring1);
             if (newPopulation.Count < newPopulationSize)
