@@ -42,7 +42,7 @@ public class UINeuralNetworkPanel : MonoBehaviour
             Layers.RemoveAt(i);
             Destroy(toBeDestroyed);
         }
-        
+
         //Set layer contents
         for (int l = 0; l<this.Layers.Count - 1; l++)
             this.Layers[l].Display(neuralNet.Layers[l]);
@@ -60,7 +60,7 @@ public class UINeuralNetworkPanel : MonoBehaviour
         //Draw node connections
         for (int l = 0; l < this.Layers.Count - 1; l++)
             this.Layers[l].DisplayConnections(neuralNet.Layers[l], this.Layers[l + 1]);
-        
+
         this.Layers[this.Layers.Count - 1].HideAllConnections();
 
     }
